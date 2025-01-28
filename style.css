@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}   
+header {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+    padding: 0 20px;
+}
+.logo a {
+    text-decoration: none;
+    font-family: "poppins";
+    font-weight: 700;
+    font-size: 2rem;
+    color: black;
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav li {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 1.2rem;
+    color: #333;
+    transition: all ease 0.3s;
+}
+.nav a:hover {
+    color: #ff7f50;
+}
+.sec {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.image img {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.image div {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
+.content h1 {
+    font-family: "poppins";
+    font-size: 3rem;
+    line-height: 1.3;
+}
+.content p {
+    font-family: "poppins";
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 30px;
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    font-family: "poppins";
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
+}
+.button:hover{
+    background-color: #333;
+}
+.destinations {
+    font-size: 2rem;
+    font-family: "poppins";
+    margin: 40px 20px;
+    text-align: center;
+}
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.destination-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.about{
+    text-align: center;
+    padding: 100px;
+}
+.about h3{
+   font-family: "poppins";
+   font-size: 3rem;
+}
+.about p{
+    font-family: "poppins";
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.persons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.person img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+}
+.person h4{
+    font-family: "poppins";
+    font-size: 2rem;
+}
+.contact{
+    padding: 80px;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+.contact h3{
+    font-family: "poppins";
+    font-size: 3rem;
+}
+.contact-info p{
+    font-family: "poppins";
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+} 
+.contact-info li{
+    margin: 0 20px;
+    font-family: "poppins";
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+.contact-info li a{
+    text-decoration: none;
+    font-family: "poppins";
+    color: black;
+}
+.contact-info i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.form{
+    width: 100%;
+}
+input,textarea{
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.4);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: "poppins";
+}
+textarea{
+    height: 200px;
+}
+.form button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 30px;
+    border:none;
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    font-family: "poppins";
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
+}
+.form button:hover{
+    background-color: #333;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+footer p{
+    font-family: "poppins";
+    font-size: 1.4rem;
+}
+@media (max-width: 1000px) {
+    header {
+        height: auto;
+        min-height: 10vh;
+        padding: 10px 20px;
+    }
+    .logo a {
+        font-size: 1.8rem;
+    }
+    .nav a {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 0;
+        height: auto;
+    }
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 10px;
+    }
+    .content h1 {
+        font-size: 2.2rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+    .destination-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.5rem;
+    }
+    .nav a {
+        font-size: 1rem;
+    }
+    .content h1 {
+        font-size: 1.8rem;
+    }
+    .content p {
+        font-size: 1rem;
+    }
+    .button {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+    .destination-item img {
+        height: 250px;
+    }
+    .contact {
+        padding: 40px 20px;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
