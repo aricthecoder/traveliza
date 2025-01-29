@@ -20,7 +20,7 @@ header {
     text-decoration: none;
     font-family: "poppins";
     font-weight: 700;
-    font-size: 2rem;
+    font-size:3rem;
     color: black;
 }
 .nav ul {
@@ -75,7 +75,7 @@ header {
 }
 .content h1 {
     font-family: "poppins";
-    font-size: 3rem;
+    font-size:2.5rem;
     line-height: 1.3;
 }
 .content p {
@@ -99,7 +99,7 @@ header {
     background-color: #333;
 }
 .destinations {
-    font-size: 2rem;
+    font-size:2.4rem;
     font-family: "poppins";
     margin: 40px 20px;
     text-align: center;
@@ -114,13 +114,19 @@ header {
     height: 300px;
     object-fit: cover;
 }
+.destination-item p,h3{
+    font-size: 1.5rem;
+}
+.destinations h2{
+    font-size: 2.8rem;
+}
 .about{
     text-align: center;
     padding: 100px;
 }
 .about h3{
    font-family: "poppins";
-   font-size: 3rem;
+   font-size:2.4rem;
 }
 .about p{
     font-family: "poppins";
@@ -142,7 +148,7 @@ header {
 }
 .person h4{
     font-family: "poppins";
-    font-size: 2rem;
+    font-size:2.5rem;
 }
 .contact{
     padding: 80px;
@@ -151,7 +157,7 @@ header {
 }
 .contact h3{
     font-family: "poppins";
-    font-size: 3rem;
+    font-size:2.5rem;
 }
 .contact-info p{
     font-family: "poppins";
